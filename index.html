@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>d3.js - pre-requisitos</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <main class="container">
+        <div class="row">
+            <h1 class="col-xs-12 text-danger bg-danger text-center">faltan algunas dependencias!</h1>            
+        </div>
+    </main>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/lodash/lodash.min.js"></script>
+    <script src="node_modules/d3/build/d3.min.js"></script>
+    <script>
+    $(function()
+    {
+        "use strict";
+
+        if( window.d3 && window._ && window.$ )
+        {
+            d3.select('.row').select('h1').remove();
+            d3.select('.row').append('h1')
+                .attr('class','col-xs-12 text-success bg-success text-center')
+                .text('dependencias ok!');
+        }
+
+        var versions = [
+        ['d3', window.d3 && d3.version],
+        ['lodash', window._ && _.VERSION],
+        ['jquery', window.$ && $().jquery],
+        ];
+
+        var list = d3.select('.row').append('ul')
+            .attr('class','col-xs-12');
+
+        var items = list.selectAll('li').data(versions);
+
+        items.enter().append('li')
+            .attr('class', function(d) { return d[1] === undefined? 'text-danger': 'text-success'})
+            .text(function(d) { return d[0] + ": " + (d[1] || "¡¡FALTA!!"); });
+    });
+    </script>
+</body>
+</html>
