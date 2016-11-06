@@ -1,4 +1,4 @@
-# Taller de D3 - Codemotion 2016
+# Taller de d3.js - Codemotion 2016
 
 El 18 de Noviembre, de 11.45 a 14.30 en el Track C voy a impartir un [taller de D3.js](http://2016.codemotion.es/agenda.html#5732408326356992/86464006) en Codemotion
 
