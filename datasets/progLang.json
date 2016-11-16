@@ -1,0 +1,21 @@
+[
+{"oct16": 1,    "oct15":  1,     "lang": "Java",                 "ratings": 18.799,  "change":-0.74  },
+{"oct16": 2,    "oct15":  2,     "lang": "C",                    "ratings": 9.835,   "change":-6.35  },
+{"oct16": 3,    "oct15":  3,     "lang": "C++",                  "ratings": 5.797,   "change":0.05   },
+{"oct16": 4,    "oct15":  4,     "lang": "C#",                   "ratings": 4.367,   "change":-0.46  },
+{"oct16": 5,    "oct15":  5,     "lang": "Python",               "ratings": 3.775,   "change":-0.74  },
+{"oct16": 6,    "oct15":  8,     "lang": "JavaScript",           "ratings": 2.751,   "change":0.46   },
+{"oct16": 8,    "oct15":  7,     "lang": "Visual Basic .NET",    "ratings": 2.66,    "change":0.2    },
+{"oct16": 9,    "oct15":  9,     "lang": "Perl",                 "ratings": 2.495,   "change":0.25   },
+{"oct16": 10,   "oct15":  14,    "lang": "Objective-C",          "ratings": 2.263,   "change":0.84   },
+{"oct16": 11,   "oct15":  12,    "lang": "Assembly language",    "ratings": 2.232,   "change":0.66   },
+{"oct16": 12,   "oct15":  15,    "lang": "Swift",                "ratings": 2.004,   "change":0.73   },
+{"oct16": 13,   "oct15":  10,    "lang": "Ruby",                 "ratings": 2.001,   "change":0.18   },
+{"oct16": 14,   "oct15":  13,    "lang": "Visual Basic",         "ratings": 1.987,   "change":0.47   },
+{"oct16": 15,   "oct15":  11,    "lang": "Delphi/Object Pascal", "ratings": 1.875,   "change":0.24   },
+{"oct16": 16,   "oct15":  65,    "lang": "Go",                   "ratings": 1.809,   "change":1.67   },
+{"oct16": 17,   "oct15":  32,    "lang": "Groovy",               "ratings": 1.769,   "change":1.19   },
+{"oct16": 18,   "oct15":  20,    "lang": "R",                    "ratings": 1.741,   "change":0.75   },
+{"oct16": 19,   "oct15":  17,    "lang": "MATLAB",               "ratings": 1.619,   "change":0.46   },
+{"oct16": 20,   "oct15":  18,    "lang": "PL/SQL",               "ratings": 1.531,   "change":0.46   }
+]

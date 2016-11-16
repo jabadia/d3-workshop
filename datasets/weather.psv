@@ -1,0 +1,366 @@
+day|temp_min|temp_max|summary|precipType|humidity|moon_phase|icon
+2015-01-01|5.19|16.44|Despejado durante el día.|rain|0.58|0.38|clear-day
+2015-01-02|5.33|15.17|Despejado durante el día.|rain|0.68|0.41|clear-day
+2015-01-03|6.74|16.55|Despejado durante el día.|rain|0.62|0.45|clear-day
+2015-01-04|6.11|17.52|Despejado durante el día.|rain|0.64|0.48|clear-day
+2015-01-05|5.96|16.07|Despejado durante el día.|rain|0.72|0.52|clear-day
+2015-01-06|6.03|16.14|Parcialmente nublado en la tarde.|rain|0.79|0.54|partly-cloudy-day
+2015-01-07|6.99|16.66|Parcialmente nublado en la tarde.|rain|0.7|0.57|partly-cloudy-day
+2015-01-08|6.03|17.16|Despejado durante el día.|rain|0.68|0.6|clear-day
+2015-01-09|5.98|17.52|Despejado durante el día.|rain|0.63|0.63|clear-day
+2015-01-10|5.24|16.6|Despejado durante el día.|rain|0.7|0.66|clear-day
+2015-01-11|5.79|17.48|Parcialmente nublado en la tarde.|rain|0.75|0.69|partly-cloudy-day
+2015-01-12|10.71|17.02|Mayormente nublado en la mañana.|rain|0.53|0.72|partly-cloudy-night
+2015-01-13|9.46|16.08|Parcialmente nublado en la tarde.|rain|0.78|0.75|partly-cloudy-day
+2015-01-14|9.58|17.38|Mayormente nublado en la mañana.|rain|0.81|0.79|partly-cloudy-night
+2015-01-15|9.42|17.06|Parcialmente nublado en la tarde y pocos vientos en la noche.|rain|0.78|0.82|wind
+2015-01-16|12.11|15.87|Mayormente nublado en la mañana.|rain|0.61|0.85|partly-cloudy-night
+2015-01-17|9.21|14.67|Parcialmente nublado en la mañana.|rain|0.49|0.89|partly-cloudy-night
+2015-01-18|5.92|12.52|Mayormente nublado en la mañana.|rain|0.58|0.92|partly-cloudy-night
+2015-01-19|7.07|13.66|Mayormente nublado en la mañana.|rain|0.72|0.96|partly-cloudy-night
+2015-01-20|6.21|12.79|Parcialmente nublado en la mañana.|rain|0.57|0.99|partly-cloudy-night
+2015-01-21|7.03|12.66|Parcialmente nublado en la mañana.|rain|0.66|0.03|partly-cloudy-night
+2015-01-22|8.78|14.54|Parcialmente nublado en la mañana.|rain|0.44|0.07|partly-cloudy-night
+2015-01-23|8.98|15.99|Parcialmente nublado en la tarde.|rain|0.35|0.11|partly-cloudy-day
+2015-01-24|6.04|14.78|Parcialmente nublado en la tarde.|rain|0.46|0.15|partly-cloudy-day
+2015-01-25|7.07|16.17|Parcialmente nublado en la tarde.|rain|0.56|0.18|partly-cloudy-day
+2015-01-26|6.11|15.92|Despejado durante el día.|rain|0.56|0.22|clear-day
+2015-01-27|6.22|16.16|Parcialmente nublado en la mañana.|rain|0.67|0.26|partly-cloudy-night
+2015-01-28|7.11|16.18|Despejado durante el día.|rain|0.68|0.29|clear-day
+2015-01-29|5.82|16.66|Despejado durante el día.|rain|0.76|0.33|clear-day
+2015-01-30|12.96|18.91|Mayormente nublado en la mañana y ventoso comenzando en la noche.|rain|0.76|0.36|wind
+2015-01-31|10.74|18.14|Ventoso hasta en la tarde y mayormente nublado en la mañana.|rain|0.64|0.39|wind
+2015-02-01|8.72|14.45|Pocos vientos y parcialmente nublado en la mañana.|rain|0.39|0.42|wind
+2015-02-02|7.03|13.77|Parcialmente nublado en la mañana y pocos vientos comenzando en la noche.|rain|0.49|0.45|wind
+2015-02-03|7.74|16.55|Mayormente nublado en la mañana.|rain|0.63|0.48|partly-cloudy-night
+2015-02-04|8.22|13.31|Ventoso hasta en la tarde y parcialmente nublado en la tarde.|rain|0.43|0.52|wind
+2015-02-05|6.64|12.66|Ventoso hasta en la tarde y parcialmente nublado en la mañana.|rain|0.3|0.55|wind
+2015-02-06|5.88|12.91|Parcialmente nublado en la mañana.|rain|0.35|0.58|partly-cloudy-night
+2015-02-07|4.81|13.08|Parcialmente nublado en la mañana.|rain|0.54|0.61|partly-cloudy-night
+2015-02-08|5.74|12.71|Parcialmente nublado en la mañana.|rain|0.69|0.64|partly-cloudy-night
+2015-02-09|4.22|14.52|Despejado durante el día.|rain|0.6|0.67|clear-day
+2015-02-10|9.07|14.26|Parcialmente nublado en la mañana.|rain|0.61|0.7|partly-cloudy-night
+2015-02-11|7.36|17.92|Parcialmente nublado en la mañana.|rain|0.61|0.73|partly-cloudy-night
+2015-02-12|9.39|12.44|Mayormente nublado en la mañana.|rain|0.81|0.76|partly-cloudy-night
+2015-02-13|2.78|14.98|Parcialmente nublado en la mañana.|rain|0.86|0.8|partly-cloudy-night
+2015-02-14|9.34|15.04|Mayormente nublado en la mañana.|rain|0.74|0.83|partly-cloudy-night
+2015-02-15|11.93|18.32|Pocos vientos y mayormente nublado en la mañana.|rain|0.68|0.87|wind
+2015-02-16|10.93|15.96|Mayormente nublado en la tarde.|rain|0.68|0.9|partly-cloudy-day
+2015-02-17|8.93|12.67|Nublado en la mañana.|rain|0.77|0.94|cloudy
+2015-02-18|10.76|15.62|Parcialmente nublado en la mañana.|rain|0.69|0.98|partly-cloudy-night
+2015-02-19|10.53|16.79|Parcialmente nublado en la mañana.|rain|0.58|0.02|partly-cloudy-night
+2015-02-20|10.56|16.64|Parcialmente nublado en la tarde.|rain|0.62|0.06|partly-cloudy-day
+2015-02-21|6.85|17.98|Parcialmente nublado en la mañana.|rain|0.69|0.09|partly-cloudy-night
+2015-02-22|11.43|16.04|Parcialmente nublado en la tarde.|rain|0.55|0.13|partly-cloudy-day
+2015-02-23|10.44|17.79|Mayormente nublado en la mañana y ventoso en la noche.|rain|0.64|0.17|wind
+2015-02-24|12.19|18.69|Pocos vientos y parcialmente nublado en la mañana.|rain|0.46|0.2|wind
+2015-02-25|11.81|17.61|Parcialmente nublado en la mañana.|rain|0.49|0.24|partly-cloudy-night
+2015-02-26|11.89|19.04|Parcialmente nublado en la mañana y pocos vientos en la noche.|rain|0.61|0.27|wind
+2015-02-27|13.27|19.33|Parcialmente nublado en la tarde.|rain|0.58|0.31|partly-cloudy-day
+2015-02-28|10.15|18.1|Parcialmente nublado en la mañana.|rain|0.66|0.34|partly-cloudy-night
+2015-03-01|8.35|17.34|Mayormente nublado en la mañana.|rain|0.82|0.37|partly-cloudy-night
+2015-03-02|9.34|18.84|Nublado en la mañana.|rain|0.89|0.4|fog
+2015-03-03|7.78|16.59|Nublado durante el día.|rain|0.93|0.43|fog
+2015-03-04|11.91|16.28|Nublado hasta en la tarde.|rain|0.9|0.46|fog
+2015-03-05|8.68|17.29|Parcialmente nublado en la mañana.|rain|0.46|0.49|partly-cloudy-night
+2015-03-06|5.64|15.64|Despejado durante el día.|rain|0.4|0.52|clear-day
+2015-03-07|6.59|16.88|Parcialmente nublado en la mañana.|rain|0.58|0.55|partly-cloudy-night
+2015-03-08|6.68|20.22|Parcialmente nublado en la mañana.|rain|0.63|0.58|partly-cloudy-night
+2015-03-09|7.18|16.8|Parcialmente nublado en la mañana.|rain|0.74|0.61|partly-cloudy-night
+2015-03-10|7.16|17.74|Parcialmente nublado en la tarde.|rain|0.74|0.64|partly-cloudy-day
+2015-03-11|8.43|19.33|Despejado durante el día.|rain|0.66|0.68|clear-day
+2015-03-12|8.26|17.63|Parcialmente nublado en la mañana.|rain|0.83|0.71|partly-cloudy-night
+2015-03-13|9.54|19.09|Despejado durante el día.|rain|0.76|0.75|clear-day
+2015-03-14|10.57|15.71|Parcialmente nublado en la mañana.|rain|0.82|0.78|partly-cloudy-day
+2015-03-15|10.66|16.84|Parcialmente nublado en la mañana.|rain|0.67|0.82|partly-cloudy-day
+2015-03-16|8.62|16.1|Parcialmente nublado en la mañana.|rain|0.69|0.85|partly-cloudy-day
+2015-03-17|10.76|17.4|Parcialmente nublado en la mañana.|rain|0.61|0.89|partly-cloudy-day
+2015-03-18|10.05|14.93|Mayormente nublado en la mañana.|rain|0.76|0.93|partly-cloudy-day
+2015-03-19|11.56|18.31|Mayormente nublado en la mañana y pocos vientos en la noche.|rain|0.67|0.97|wind
+2015-03-20|10.94|17.44|Mayormente nublado en la mañana y ventoso hasta en la tarde.|rain|0.76|0.01|wind
+2015-03-21|9.71|16.02|Mayormente nublado en la mañana.|rain|0.87|0.04|partly-cloudy-day
+2015-03-22|10.69|16.67|Mayormente nublado en la mañana.|rain|0.85|0.08|partly-cloudy-day
+2015-03-23|11.24|17.9|Parcialmente nublado en la mañana.|rain|0.78|0.12|partly-cloudy-day
+2015-03-24|11.16|14.53|Mayormente nublado en la mañana.|rain|0.77|0.15|partly-cloudy-day
+2015-03-25|10.18|16.09|Mayormente nublado en la mañana y pocos vientos en la noche.|rain|0.58|0.19|wind
+2015-03-26|9.03|15.89|Parcialmente nublado en la mañana.|rain|0.48|0.22|partly-cloudy-day
+2015-03-27|12.08|18.61|Parcialmente nublado en la mañana.|rain|0.76|0.25|partly-cloudy-day
+2015-03-28|12.36|20.21|Parcialmente nublado en la tarde.|rain|0.79|0.29|partly-cloudy-day
+2015-03-29|11.77|21.94|Parcialmente nublado en la mañana.|rain|0.77|0.32|partly-cloudy-day
+2015-03-30|12.36|22.99|Parcialmente nublado en la mañana.|rain|0.76|0.35|partly-cloudy-day
+2015-03-31|13.25|24.43|Parcialmente nublado en la mañana.|rain|0.75|0.38|partly-cloudy-day
+2015-04-01|14.36|25.75|Parcialmente nublado en la mañana.|rain|0.56|0.41|partly-cloudy-day
+2015-04-02|13|21.79|Parcialmente nublado en la mañana.|rain|0.58|0.44|partly-cloudy-day
+2015-04-03|11.93|18.84|Mayormente nublado en la tarde.|rain|0.79|0.47|partly-cloudy-day
+2015-04-04|12.49|19.85|Parcialmente nublado en la mañana.|rain|0.8|0.5|partly-cloudy-day
+2015-04-05|12.49|18.93|Parcialmente nublado en la mañana.|rain|0.77|0.53|partly-cloudy-day
+2015-04-06|14.75|18.93|Mayormente nublado en la mañana.|rain|0.61|0.56|partly-cloudy-day
+2015-04-07|12.69|17.04|Pocos vientos y mayormente nublado en la mañana.|rain|0.55|0.59|wind
+2015-04-08|12.86|17.88|Pocos vientos hasta en la tarde y mayormente nublado en la mañana.|rain|0.52|0.62|wind
+2015-04-09|12.49|19.43|Mayormente nublado en la mañana.|rain|0.59|0.66|partly-cloudy-day
+2015-04-10|10.86|20.74|Mayormente nublado en la mañana.|rain|0.64|0.69|partly-cloudy-day
+2015-04-11|13.6|16.69|Mayormente nublado en la mañana.|rain|0.83|0.73|partly-cloudy-day
+2015-04-12|12.51|21.02|Parcialmente nublado en la mañana.|rain|0.67|0.76|partly-cloudy-day
+2015-04-13|16.72|24.83|Parcialmente nublado en la mañana y seco durante el día.|rain|0.4|0.8|partly-cloudy-day
+2015-04-14|18.89|26.12|Mayormente nublado en la mañana y seco durante el día.|rain|0.3|0.84|partly-cloudy-day
+2015-04-15|14.89|18.38|Despejado durante el día.|rain|0.8|0.88|clear-day
+2015-04-16|14.43|19.83|Mayormente nublado en la mañana.|rain|0.86|0.91|partly-cloudy-day
+2015-04-17|12.04|19.47|Parcialmente nublado en la tarde.|rain|0.86|0.95|partly-cloudy-day
+2015-04-18|12.41|19.59|Mayormente nublado en la tarde.|rain|0.8|0.99|partly-cloudy-day
+2015-04-19|12.36|19.48|Parcialmente nublado en la mañana.|rain|0.82|0.03|partly-cloudy-day
+2015-04-20|12.76|23.91|Mayormente nublado en la mañana.|rain|0.59|0.06|partly-cloudy-day
+2015-04-21|16.29|23.47|Pocos vientos y mayormente nublado en la mañana.|rain|0.48|0.1|wind
+2015-04-22|15.16|20.67|Parcialmente nublado en la mañana.|rain|0.67|0.13|partly-cloudy-day
+2015-04-23|13.79|20.4|Parcialmente nublado en la mañana.|rain|0.79|0.17|partly-cloudy-day
+2015-04-24|14.11|19.08|Parcialmente nublado en la mañana.|rain|0.84|0.2|partly-cloudy-day
+2015-04-25|15.02|19.51|Mayormente nublado en la tarde.|rain|0.85|0.23|partly-cloudy-day
+2015-04-26|15.86|23.62|Mayormente nublado en la mañana y pocos vientos en la noche.|rain|0.78|0.26|wind
+2015-04-27|13.64|20.91|Mayormente nublado en la mañana.|rain|0.72|0.29|partly-cloudy-day
+2015-04-28|13.52|19.76|Parcialmente nublado en la mañana.|rain|0.77|0.32|partly-cloudy-day
+2015-04-29|14.04|20.81|Parcialmente nublado en la tarde.|rain|0.83|0.35|partly-cloudy-day
+2015-04-30|13.52|21.19|Mayormente nublado en la mañana.|rain|0.79|0.38|partly-cloudy-day
+2015-05-01|15.57|20.48|Parcialmente nublado en la mañana.|rain|0.84|0.41|partly-cloudy-day
+2015-05-02|14.71|25.29|Mayormente nublado en la mañana.|rain|0.68|0.44|partly-cloudy-day
+2015-05-03|15.78|24.23|Parcialmente nublado en la mañana.|rain|0.72|0.47|partly-cloudy-day
+2015-05-04|17.66|24.26|Mayormente nublado en la mañana.|rain|0.7|0.51|partly-cloudy-day
+2015-05-05|17.12|22.61|Mayormente nublado en la mañana.|rain|0.72|0.54|partly-cloudy-day
+2015-05-06|14.88|22.04|Parcialmente nublado en la mañana.|rain|0.79|0.57|partly-cloudy-day
+2015-05-07|15.57|29.99|Parcialmente nublado en la mañana.|rain|0.53|0.61|partly-cloudy-day
+2015-05-08|16.24|22.87|Parcialmente nublado en la tarde.|rain|0.79|0.64|partly-cloudy-day
+2015-05-09|15.57|27.66|Parcialmente nublado en la tarde.|rain|0.61|0.68|partly-cloudy-day
+2015-05-10|19.5|31.14|Parcialmente nublado en la mañana y seco durante el día.|rain|0.41|0.71|partly-cloudy-day
+2015-05-11|17.87|24.77|Parcialmente nublado en la mañana.|rain|0.6|0.75|partly-cloudy-day
+2015-05-12|15.46|25.28|Despejado durante el día.|rain|0.67|0.79|clear-day
+2015-05-13|16.74|25.28|Parcialmente nublado en la tarde.|rain|0.71|0.83|partly-cloudy-day
+2015-05-14|17.47|29.56|Parcialmente nublado en la mañana.|rain|0.61|0.87|partly-cloudy-day
+2015-05-15|18.6|26.97|Pocos vientos y mayormente nublado en la mañana.|rain|0.63|0.9|wind
+2015-05-16|17.14|24.49|Despejado durante el día.|rain|0.6|0.94|clear-day
+2015-05-17|16.67|28.28|Seco durante el día.|rain|0.41|0.98|clear-day
+2015-05-18|15.82|29.89|Mayormente nublado en la mañana y seco durante el día.|rain|0.43|0.02|partly-cloudy-day
+2015-05-19|17.09|26.42|Parcialmente nublado en la mañana.|rain|0.69|0.05|partly-cloudy-day
+2015-05-20|15.56|23.79|Mayormente nublado en la mañana.|rain|0.64|0.08|partly-cloudy-day
+2015-05-21|10.56|22.46|Parcialmente nublado en la mañana.|rain|0.63|0.12|partly-cloudy-day
+2015-05-22|10|23.88|Parcialmente nublado en la mañana.|rain|0.59|0.15|partly-cloudy-day
+2015-05-23|11.67|24.94|Parcialmente nublado en la mañana.|rain|0.54|0.18|partly-cloudy-day
+2015-05-24|14.44|22.01|Mayormente nublado en la mañana.|rain|0.53|0.21|partly-cloudy-day
+2015-05-25|12.22|24.61|Mayormente nublado en la mañana.|rain|0.54|0.24|partly-cloudy-day
+2015-05-26|15.29|23.71|Parcialmente nublado en la mañana.|rain|0.67|0.27|partly-cloudy-day
+2015-05-27|12.22|25.08|Parcialmente nublado en la tarde.|rain|0.61|0.3|partly-cloudy-day
+2015-05-28|17.28|29.13|Parcialmente nublado en la mañana y seco durante el día.|rain|0.46|0.33|partly-cloudy-day
+2015-05-29|19.83|25.23|Parcialmente nublado en la mañana.|rain|0.51|0.36|partly-cloudy-day
+2015-05-30|17.53|24.84|Parcialmente nublado en la mañana.|rain|0.77|0.39|partly-cloudy-day
+2015-05-31|18.52|24.96|Despejado durante el día.|rain|0.76|0.42|clear-day
+2015-06-01|20.18|24.51|Mayormente nublado en la mañana.|rain|0.76|0.45|partly-cloudy-day
+2015-06-02|17.36|31.92|Parcialmente nublado en la tarde y seco durante el día.|rain|0.51|0.48|partly-cloudy-day
+2015-06-03|20.41|31.95|Parcialmente nublado en la mañana y seco durante el día.|rain|0.3|0.53|partly-cloudy-day
+2015-06-04|20.44|31.2|Seco durante el día.|rain|0.33|0.56|clear-day
+2015-06-05|19.24|32.07|Parcialmente nublado en la mañana.|rain|0.44|0.59|partly-cloudy-day
+2015-06-06|20.27|32.21|Parcialmente nublado en la mañana y seco durante el día.|rain|0.38|0.63|partly-cloudy-day
+2015-06-07|20.52|31.31|Parcialmente nublado en la mañana y seco durante el día.|rain|0.29|0.67|partly-cloudy-day
+2015-06-08|19.67|32.11|Parcialmente nublado en la mañana y seco durante el día.|rain|0.3|0.7|partly-cloudy-day
+2015-06-09|20.66|26.93|Parcialmente nublado en la mañana.|rain|0.54|0.74|partly-cloudy-day
+2015-06-10|18.81|26.78|Parcialmente nublado en la mañana.|rain|0.59|0.78|partly-cloudy-day
+2015-06-11|16.67|23.98|Mayormente nublado en la mañana.|rain|0.71|0.82|partly-cloudy-day
+2015-06-12|18.39|25.16|Parcialmente nublado en la mañana.|rain|0.7|0.85|partly-cloudy-day
+2015-06-13|18.31|25.13|Parcialmente nublado en la mañana y ventoso hasta en la noche.|rain|0.57|0.89|wind
+2015-06-14|16.77|22.48|Parcialmente nublado en la mañana.|rain|0.65|0.93|partly-cloudy-day
+2015-06-15|15.31|23.38|Mayormente nublado en la mañana.|rain|0.67|0.96|partly-cloudy-day
+2015-06-16|15.74|23.36|Parcialmente nublado en la mañana.|rain|0.72|0.99|partly-cloudy-day
+2015-06-17|16.38|25.79|Parcialmente nublado en la tarde.|rain|0.59|0.04|partly-cloudy-day
+2015-06-18|19.46|29.91|Parcialmente nublado en la mañana.|rain|0.44|0.07|partly-cloudy-day
+2015-06-19|18.52|26.54|Parcialmente nublado en la tarde.|rain|0.54|0.1|partly-cloudy-day
+2015-06-20|19.24|28.11|Parcialmente nublado en la tarde.|rain|0.49|0.13|partly-cloudy-day
+2015-06-21|22.1|34.04|Seco durante el día y parcialmente nublado en la tarde.|rain|0.37|0.16|partly-cloudy-day
+2015-06-22|20.74|27.62|Parcialmente nublado en la mañana.|rain|0.6|0.19|partly-cloudy-day
+2015-06-23|18.6|28.32|Parcialmente nublado en la tarde.|rain|0.68|0.22|partly-cloudy-day
+2015-06-24|22.18|27.74|Parcialmente nublado en la mañana.|rain|0.6|0.25|partly-cloudy-day
+2015-06-25|21.25|30.34|Parcialmente nublado en la tarde.|rain|0.62|0.28|partly-cloudy-day
+2015-06-26|21.4|28.59|Parcialmente nublado en la tarde.|rain|0.49|0.31|partly-cloudy-day
+2015-06-27|21.38|32.23|Seco durante el día.|rain|0.44|0.34|clear-day
+2015-06-28|22.41|30.89|Seco durante el día.|rain|0.41|0.37|clear-day
+2015-06-29|23.43|39.86|Seco durante el día.|rain|0.29|0.41|clear-day
+2015-06-30|25.71|32.56|Seco durante el día y parcialmente nublado en la tarde.|rain|0.42|0.44|partly-cloudy-day
+2015-07-01|22.28|29.72|Parcialmente nublado en la mañana.|rain|0.69|0.47|partly-cloudy-day
+2015-07-02|23.41|29.1|Parcialmente nublado en la mañana.|rain|0.7|0.52|partly-cloudy-day
+2015-07-03|24.16|34.01|Parcialmente nublado en la mañana.|rain|0.62|0.55|partly-cloudy-day
+2015-07-04|23.66|31.13|Parcialmente nublado en la mañana.|rain|0.69|0.58|partly-cloudy-day
+2015-07-05|24.73|31.18|Parcialmente nublado en la mañana.|rain|0.65|0.62|partly-cloudy-day
+2015-07-06|25.64|33.69|Seco durante el día y parcialmente nublado en la mañana.|rain|0.44|0.66|partly-cloudy-day
+2015-07-07|24.77|35.93|Seco durante el día y parcialmente nublado en la tarde.|rain|0.45|0.69|partly-cloudy-day
+2015-07-08|24.46|32.99|Parcialmente nublado en la mañana.|rain|0.56|0.73|partly-cloudy-day
+2015-07-09|24.31|34.39|Parcialmente nublado en la tarde.|rain|0.61|0.77|partly-cloudy-day
+2015-07-10|23.32|30.49|Despejado durante el día.|rain|0.71|0.81|clear-day
+2015-07-11|22.81|30.46|Despejado durante el día.|rain|0.7|0.84|clear-day
+2015-07-12|24.36|30.51|Despejado durante el día.|rain|0.67|0.88|clear-day
+2015-07-13|23.26|31.11|Parcialmente nublado en la tarde.|rain|0.68|0.91|partly-cloudy-day
+2015-07-14|24.03|31.75|Despejado durante el día.|rain|0.69|0.95|clear-day
+2015-07-15|24.16|32.69|Parcialmente nublado en la tarde.|rain|0.63|0.98|partly-cloudy-day
+2015-07-16|25.29|35.69|Parcialmente nublado en la mañana.|rain|0.48|0.02|partly-cloudy-day
+2015-07-17|25.85|38.66|Mayormente nublado en la mañana y seco durante el día.|rain|0.42|0.05|partly-cloudy-day
+2015-07-18|25.94|30.97|Parcialmente nublado en la mañana.|rain|0.64|0.08|partly-cloudy-day
+2015-07-19|24.48|31.16|Despejado durante el día.|rain|0.68|0.11|clear-day
+2015-07-20|24.82|31.72|Parcialmente nublado en la tarde.|rain|0.7|0.14|partly-cloudy-day
+2015-07-21|24.24|31.91|Parcialmente nublado en la tarde.|rain|0.69|0.17|partly-cloudy-day
+2015-07-22|25.34|32.46|Parcialmente nublado en la tarde.|rain|0.68|0.2|partly-cloudy-day
+2015-07-23|25.63|33.02|Parcialmente nublado en la tarde.|rain|0.65|0.23|partly-cloudy-day
+2015-07-24|25.81|31.36|Parcialmente nublado en la tarde.|rain|0.67|0.26|partly-cloudy-day
+2015-07-25|24.42|30.86|Parcialmente nublado en la tarde.|rain|0.71|0.29|partly-cloudy-day
+2015-07-26|25.38|31.93|Despejado durante el día.|rain|0.68|0.32|clear-day
+2015-07-27|25.02|31.18|Despejado durante el día.|rain|0.7|0.36|clear-day
+2015-07-28|23.54|33.73|Despejado durante el día.|rain|0.7|0.39|clear-day
+2015-07-29|26.39|32.6|Parcialmente nublado en la tarde.|rain|0.72|0.42|partly-cloudy-day
+2015-07-30|25.38|31.19|Parcialmente nublado en la tarde.|rain|0.71|0.46|partly-cloudy-day
+2015-07-31|25.98|31.47|Mayormente nublado en la mañana.|rain|0.69|0.49|partly-cloudy-day
+2015-08-01|23.87|30.33|Parcialmente nublado en la mañana.|rain|0.71|0.53|partly-cloudy-day
+2015-08-02|26.03|34.13|Despejado durante el día.|rain|0.58|0.57|clear-day
+2015-08-03|26.46|39.2|Parcialmente nublado en la mañana y seco durante el día.|rain|0.51|0.61|partly-cloudy-day
+2015-08-04|25.38|31.47|Despejado durante el día.|rain|0.73|0.65|clear-day
+2015-08-05|25.23|31.86|Parcialmente nublado en la tarde.|rain|0.7|0.68|partly-cloudy-day
+2015-08-06|26.94|32.62|Parcialmente nublado en la mañana.|rain|0.73|0.72|partly-cloudy-day
+2015-08-07|27.66|33.12|Pocos vientos en la noche.|rain|0.71|0.76|wind
+2015-08-08|28.09|33.45|Mayormente nublado en la mañana.|rain|0.66|0.79|partly-cloudy-day
+2015-08-09|27.28|34.03|Parcialmente nublado en la mañana.|rain|0.58|0.83|partly-cloudy-day
+2015-08-10|26.48|31.16|Mayormente nublado en la mañana.|rain|0.76|0.87|partly-cloudy-day
+2015-08-11|26.39|31.69|Mayormente nublado en la mañana.|rain|0.72|0.9|partly-cloudy-day
+2015-08-12|26.09|32.51|Parcialmente nublado en la mañana.|rain|0.68|0.93|partly-cloudy-day
+2015-08-13|25.45|33.57|Parcialmente nublado en la tarde y ventoso comenzando en la tarde, continuando hasta en la noche.|rain|0.58|0.96|wind
+2015-08-14|23.24|30.43|Parcialmente nublado en la tarde.|rain|0.5|0.99|partly-cloudy-day
+2015-08-15|20.62|28.17|Parcialmente nublado en la mañana.|rain|0.64|0.03|partly-cloudy-day
+2015-08-16|22.73|30.92|Parcialmente nublado en la mañana.|rain|0.62|0.06|partly-cloudy-night
+2015-08-17|21.87|28.76|Parcialmente nublado en la tarde.|rain|0.68|0.09|partly-cloudy-day
+2015-08-18|21.71|28.91|Parcialmente nublado en la mañana.|rain|0.71|0.12|partly-cloudy-day
+2015-08-19|23.79|30.68|Parcialmente nublado en la mañana.|rain|0.67|0.15|partly-cloudy-day
+2015-08-20|25.03|34.02|Parcialmente nublado en la tarde.|rain|0.55|0.18|partly-cloudy-day
+2015-08-21|26.41|35.66|Parcialmente nublado en la mañana.|rain|0.45|0.21|partly-cloudy-day
+2015-08-22|24.31|30.32|Parcialmente nublado en la mañana.|rain|0.58|0.24|partly-cloudy-day
+2015-08-23|21.73|28.04|Parcialmente nublado en la mañana y pocos vientos comenzando en la tarde.|rain|0.66|0.27|wind
+2015-08-24|19.14|27.22|Parcialmente nublado en la tarde.|rain|0.68|0.31|partly-cloudy-day
+2015-08-25|19.85|28.66|Parcialmente nublado en la tarde.|rain|0.66|0.34|partly-cloudy-day
+2015-08-26|22.53|29.84|Parcialmente nublado en la tarde.|rain|0.65|0.38|partly-cloudy-day
+2015-08-27|21.96|30.21|Parcialmente nublado en la mañana.|rain|0.71|0.41|partly-cloudy-day
+2015-08-28|22.06|34.45|Parcialmente nublado en la tarde.|rain|0.62|0.45|partly-cloudy-day
+2015-08-29|23.51|32.78|Parcialmente nublado en la mañana.|rain|0.59|0.48|partly-cloudy-day
+2015-08-30|25.02|33.81|Parcialmente nublado en la mañana.|rain|0.61|0.52|partly-cloudy-day
+2015-08-31|25.31|29.91|Parcialmente nublado en la mañana.|rain|0.72|0.56|partly-cloudy-day
+2015-09-01|23.64|28.68|Parcialmente nublado en la tarde.|rain|0.73|0.6|partly-cloudy-day
+2015-09-02|21.32|29.46|Parcialmente nublado en la tarde.|rain|0.66|0.64|partly-cloudy-day
+2015-09-03|21.27|27.32|Parcialmente nublado en la mañana.|rain|0.65|0.67|partly-cloudy-day
+2015-09-04|18.89|26.98|Parcialmente nublado en la mañana.|rain|0.67|0.71|partly-cloudy-day
+2015-09-05|18.89|28.66|Parcialmente nublado en la mañana.||0.63|0.75|partly-cloudy-day
+2015-09-06|21.11|28.11|Lluvia ligera comenzando en la noche.|rain|0.69|0.78|rain
+2015-09-07|20.8|26.9|Mayormente nublado en la mañana.|rain|0.77|0.82|partly-cloudy-day
+2015-09-08|20|26.26|Parcialmente nublado en la mañana.|rain|0.73|0.85|partly-cloudy-day
+2015-09-09|19.2|26.76|Parcialmente nublado en la mañana.|rain|0.74|0.88|partly-cloudy-day
+2015-09-10|20.71|28.07|Parcialmente nublado en la mañana.|rain|0.74|0.91|partly-cloudy-day
+2015-09-11|20.13|28.13|Parcialmente nublado en la mañana.|rain|0.68|0.94|partly-cloudy-day
+2015-09-12|22.19|28.82|Mayormente nublado en la mañana.|rain|0.6|0.97|partly-cloudy-day
+2015-09-13|20.13|26.58|Parcialmente nublado en la mañana.|rain|0.74|0.01|partly-cloudy-day
+2015-09-14|18.94|26.76|Mayormente nublado en la mañana.|rain|0.73|0.04|partly-cloudy-day
+2015-09-15|18.51|25.35|Parcialmente nublado en la mañana.|rain|0.69|0.07|partly-cloudy-day
+2015-09-16|17.71|24.68|Parcialmente nublado en la tarde y pocos vientos comenzando en la noche.|rain|0.7|0.1|wind
+2015-09-17|17.6|23.33|Parcialmente nublado en la mañana.|rain|0.73|0.13|partly-cloudy-day
+2015-09-18|16.94|28.38|Parcialmente nublado en la mañana.|rain|0.54|0.16|partly-cloudy-day
+2015-09-19|21.15|29.12|Pocos vientos hasta en la tarde y parcialmente nublado en la tarde.|rain|0.5|0.19|wind
+2015-09-20|19.63|26.29|Parcialmente nublado en la tarde.|rain|0.67|0.22|partly-cloudy-day
+2015-09-21|20.21|26.32|Mayormente nublado en la mañana.|rain|0.75|0.26|partly-cloudy-day
+2015-09-22|19.27|27.95|Mayormente nublado en la mañana.|rain|0.74|0.29|partly-cloudy-day
+2015-09-23|17.74|30.61|Parcialmente nublado en la tarde.|rain|0.59|0.33|partly-cloudy-day
+2015-09-24|19.42|26.53|Parcialmente nublado en la mañana.|rain|0.68|0.36|partly-cloudy-day
+2015-09-25|16.72|25.75|Parcialmente nublado en la mañana.|rain|0.7|0.4|partly-cloudy-day
+2015-09-26|16.72|25.63|Parcialmente nublado en la mañana.|rain|0.71|0.44|partly-cloudy-day
+2015-09-27|17.76|26.53|Parcialmente nublado en la tarde.|rain|0.66|0.47|partly-cloudy-day
+2015-09-28|13.89|27.35|Parcialmente nublado en la mañana.|rain|0.58|0.51|partly-cloudy-day
+2015-09-29|19.53|23.2|Mayormente nublado en la mañana.|rain|0.66|0.55|partly-cloudy-day
+2015-09-30|17.63|23.86|Parcialmente nublado en la mañana.|rain|0.73|0.59|partly-cloudy-day
+2015-10-01|16.69|24.38|Parcialmente nublado en la tarde.|rain|0.72|0.62|partly-cloudy-day
+2015-10-02|16.67|24.48|Parcialmente nublado en la tarde.|rain|0.75|0.66|partly-cloudy-day
+2015-10-03|19.71|25.16|Parcialmente nublado en la mañana.|rain|0.76|0.7|partly-cloudy-day
+2015-10-04|17.89|27.19|Mayormente nublado en la tarde.|rain|0.74|0.73|partly-cloudy-day
+2015-10-05|21.38|25.48|Mayormente nublado en la mañana.|rain|0.79|0.76|partly-cloudy-night
+2015-10-06|20.61|26.31|Parcialmente nublado en la mañana.|rain|0.69|0.8|partly-cloudy-day
+2015-10-07|17.67|24.67|Mayormente nublado en la tarde.|rain|0.71|0.83|partly-cloudy-day
+2015-10-08|17.65|24.44|Mayormente nublado en la mañana.|rain|0.66|0.86|partly-cloudy-day
+2015-10-09|16.6|25.24|Parcialmente nublado en la mañana.|rain|0.67|0.89|partly-cloudy-day
+2015-10-10|15.8|23.84|Parcialmente nublado en la tarde.|rain|0.74|0.92|partly-cloudy-day
+2015-10-11|17.58|24.72|Lluvia ligera comenzando en la noche.|rain|0.77|0.95|rain
+2015-10-12|18.16|25.23|Mayormente nublado en la mañana.|rain|0.78|0.98|partly-cloudy-day
+2015-10-13|18.35|22.81|Parcialmente nublado en la mañana.|rain|0.83|0.01|partly-cloudy-day
+2015-10-14|16.89|23.46|Parcialmente nublado en la tarde.|rain|0.8|0.04|partly-cloudy-day
+2015-10-15|16.18|23.64|Parcialmente nublado en la mañana.|rain|0.78|0.07|partly-cloudy-day
+2015-10-16|16.54|26.78|Parcialmente nublado en la tarde.|rain|0.7|0.11|partly-cloudy-day
+2015-10-17|18.66|27.23|Lluvia comenzando en la noche.|rain|0.6|0.14|rain
+2015-10-18|17.91|25.89|Lluvia comenzando en la noche.|rain|0.7|0.17|rain
+2015-10-19|17.27|22.43|Parcialmente nublado en la mañana.|rain|0.82|0.2|partly-cloudy-day
+2015-10-20|16.96|22.69|Mayormente nublado en la mañana.|rain|0.83|0.24|partly-cloudy-day
+2015-10-21|17.63|22.39|Mayormente nublado en la mañana.|rain|0.82|0.27|partly-cloudy-day
+2015-10-22|13.36|22.23|Parcialmente nublado en la tarde.|rain|0.72|0.31|partly-cloudy-day
+2015-10-23|14.63|22.54|Parcialmente nublado en la mañana.|rain|0.74|0.35|partly-cloudy-day
+2015-10-24|16.76|21.22|Mayormente nublado en la mañana.|rain|0.72|0.39|partly-cloudy-night
+2015-10-25|16.73|21.14|Parcialmente nublado en la mañana.|rain|0.74|0.42|partly-cloudy-night
+2015-10-26|16.62|21.28|Lluvia hasta en la tarde, comenzando otra vez en la noche.|rain|0.83|0.46|rain
+2015-10-27|16.65|21.78|Parcialmente nublado en la mañana.|rain|0.81|0.51|partly-cloudy-night
+2015-10-28|13.76|21.69|Parcialmente nublado en la mañana.|rain|0.66|0.54|partly-cloudy-night
+2015-10-29|14.1|21.98|Parcialmente nublado en la mañana.|rain|0.72|0.57|partly-cloudy-night
+2015-10-30|14.46|25.36|Parcialmente nublado en la tarde.|rain|0.7|0.61|partly-cloudy-day
+2015-10-31|16.21|22.57|Parcialmente nublado en la mañana.|rain|0.67|0.65|partly-cloudy-night
+2015-11-01|17.91|22.49|Ventoso comenzando en la noche y fuertes lluvias en la noche.|rain|0.63|0.68|rain
+2015-11-02|14.27|18.99|Lluvia ligera en la mañana.|rain|0.74|0.71|rain
+2015-11-03|13.39|21.67|Parcialmente nublado en la mañana.|rain|0.78|0.75|partly-cloudy-night
+2015-11-04|15.69|21.72|Mayormente nublado en la mañana.|rain|0.79|0.78|partly-cloudy-night
+2015-11-05|13.98|22.04|Parcialmente nublado en la mañana.|rain|0.85|0.81|partly-cloudy-night
+2015-11-06|15.61|22.58|Parcialmente nublado en la tarde.|rain|0.76|0.84|partly-cloudy-day
+2015-11-07|15.66|24.67|Despejado durante el día.|rain|0.68|0.87|clear-day
+2015-11-08|15.53|23.72|Despejado durante el día.|rain|0.67|0.9|clear-day
+2015-11-09|13.78|23.64|Despejado durante el día.|rain|0.68|0.93|clear-day
+2015-11-10|13.66|24.47|Despejado durante el día.|rain|0.7|0.96|clear-day
+2015-11-11|12.68|21.37|Despejado durante el día.|rain|0.77|0.98|clear-day
+2015-11-12|12.1|20.88|Despejado durante el día.|rain|0.75|0.02|clear-day
+2015-11-13|13.06|21.02|Despejado durante el día.|rain|0.72|0.05|clear-day
+2015-11-14|14.98|21.84|Parcialmente nublado en la tarde.|rain|0.68|0.09|partly-cloudy-day
+2015-11-15|13.86|20.91|Despejado durante el día.|rain|0.73|0.12|clear-day
+2015-11-16|12.1|20.64|Parcialmente nublado en la tarde.|rain|0.78|0.15|partly-cloudy-day
+2015-11-17|11.07|20.72|Despejado durante el día.|rain|0.71|0.19|clear-day
+2015-11-18|11.7|20.09|Parcialmente nublado en la tarde.|rain|0.73|0.22|partly-cloudy-day
+2015-11-19|10.88|20.24|Parcialmente nublado en la mañana.|rain|0.75|0.26|partly-cloudy-night
+2015-11-20|11.51|21.51|Parcialmente nublado en la tarde.|rain|0.76|0.3|partly-cloudy-day
+2015-11-21|12.29|22.62|Parcialmente nublado en la mañana.|rain|0.69|0.34|partly-cloudy-day
+2015-11-22|10.44|16.67|Pocos vientos y parcialmente nublado en la mañana.|rain|0.48|0.37|wind
+2015-11-23|6.97|15.87|Parcialmente nublado en la tarde.|rain|0.54|0.41|partly-cloudy-day
+2015-11-24|5.77|16.47|Parcialmente nublado en la mañana.|rain|0.51|0.45|partly-cloudy-night
+2015-11-25|8.42|17.24|Parcialmente nublado en la tarde.|rain|0.56|0.48|partly-cloudy-day
+2015-11-26|8.69|22.36|Parcialmente nublado en la mañana y seco durante el día.|rain|0.56|0.53|partly-cloudy-night
+2015-11-27|11.95|19.4|Parcialmente nublado en la mañana.|rain|0.53|0.56|partly-cloudy-night
+2015-11-28|10.32|17.91|Despejado durante el día.|rain|0.71|0.59|clear-day
+2015-11-29|10.12|20.59|Despejado durante el día.|rain|0.63|0.63|clear-day
+2015-11-30|8.25|20.29|Parcialmente nublado en la mañana.|rain|0.66|0.66|partly-cloudy-night
+2015-12-01|8.29|17.72|Parcialmente nublado en la mañana.|rain|0.68|0.69|partly-cloudy-night
+2015-12-02|8.68|17.39|Parcialmente nublado en la mañana.|rain|0.73|0.72|partly-cloudy-night
+2015-12-03|10.02|20.77|Parcialmente nublado en la mañana.|rain|0.67|0.75|partly-cloudy-night
+2015-12-04|9.69|19|Parcialmente nublado en la tarde.|rain|0.79|0.78|partly-cloudy-day
+2015-12-05|10.48|18.86|Parcialmente nublado en la mañana.|rain|0.78|0.81|partly-cloudy-night
+2015-12-06|9.82|18.75|Parcialmente nublado en la tarde.|rain|0.75|0.84|partly-cloudy-day
+2015-12-07|10.78|20.32|Parcialmente nublado en la tarde.|rain|0.7|0.87|partly-cloudy-day
+2015-12-08|10.54|17.93|Parcialmente nublado en la mañana.|rain|0.78|0.9|partly-cloudy-night
+2015-12-09|11.63|18.65|Mayormente nublado en la mañana.|rain|0.68|0.93|partly-cloudy-night
+2015-12-10|14.36|19.4|Parcialmente nublado en la mañana.|rain|0.67|0.96|partly-cloudy-night
+2015-12-11|13.49|18.43|Mayormente nublado en la mañana.|rain|0.62|0.99|partly-cloudy-night
+2015-12-12|11.18|18.36|Parcialmente nublado en la mañana.|rain|0.67|0.03|partly-cloudy-night
+2015-12-13|10.43|17.26|Mayormente nublado en la mañana.|rain|0.78|0.07|partly-cloudy-night
+2015-12-14|9.98|16.77|Mayormente nublado en la mañana.|rain|0.78|0.1|partly-cloudy-night
+2015-12-15|10.09|18.11|Parcialmente nublado en la mañana.|rain|0.69|0.14|partly-cloudy-night
+2015-12-16|11.09|20.87|Mayormente nublado en la mañana.|rain|0.53|0.17|partly-cloudy-night
+2015-12-17|11.18|19.67|Parcialmente nublado en la mañana.|rain|0.55|0.21|partly-cloudy-night
+2015-12-18|9.83|17.97|Parcialmente nublado en la tarde.|rain|0.73|0.25|partly-cloudy-day
+2015-12-19|8.32|17.86|Parcialmente nublado en la mañana.|rain|0.73|0.28|partly-cloudy-night
+2015-12-20|6.86|16.33|Parcialmente nublado en la mañana.|rain|0.77|0.32|partly-cloudy-night
+2015-12-21|8.88|18.06|Mayormente nublado en la mañana.|rain|0.78|0.36|partly-cloudy-night
+2015-12-22|9.96|19.79|Despejado durante el día.|rain|0.73|0.4|clear-day
+2015-12-23|8.67|17.64|Parcialmente nublado en la mañana.|rain|0.77|0.43|partly-cloudy-night
+2015-12-24|9.39|16.97|Parcialmente nublado en la mañana.|rain|0.75|0.47|partly-cloudy-night
+2015-12-25|8.39|17.58|Parcialmente nublado en la tarde.|rain|0.74|0.51|partly-cloudy-day
+2015-12-26|10.37|19.46|Parcialmente nublado en la mañana.|rain|0.7|0.54|partly-cloudy-night
+2015-12-27|10.78|18.56|Parcialmente nublado en la mañana.|rain|0.64|0.57|partly-cloudy-night
+2015-12-28|11.13|17.81|Mayormente nublado en la mañana.|rain|0.66|0.6|partly-cloudy-night
+2015-12-29|11.02|17.33|Mayormente nublado en la mañana.|rain|0.84|0.64|partly-cloudy-night
+2015-12-30|9.19|17.28|Despejado durante el día.|rain|0.77|0.67|clear-day
+2015-12-31|10.59|17.77|Mayormente nublado en la mañana.|rain|0.73|0.7|partly-cloudy-night
