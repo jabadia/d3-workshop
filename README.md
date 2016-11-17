@@ -63,3 +63,6 @@ En ese momento se debería abrir vuestro navegador y ver algo así:
 
 Si es así, enhorabuena, vete a la nevera y ábrete una cerveza o una fanta para celebrarlo.
 
+
+# info en vivo
+[info en vivo](https://docs.google.com/document/d/1eALde4XkotSuhhPrMhar9b69O6WNgymvP2jKER996UY/edit?usp=sharing)
