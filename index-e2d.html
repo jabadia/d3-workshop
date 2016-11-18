@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo #2</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <style>
+        .chart svg {
+            border: 1px solid black;
+            padding: 0px;
+        }
+        .bar { 
+            fill: #2ecc71;
+        }
+        .cool 
+        { 
+            fill: #e67e22; 
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1>Ejemplo #2</h1>
+                <p>SVG, Escalas, Colores, Ejes</p>
+            </div>
+            <section class="col-xs-12">
+                <h2>Lenguajes de Programación</h2>
+                <div class="chart"></div>
+            </section>
+        </div>
+    </main>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/lodash/lodash.min.js"></script>
+    <script src="node_modules/d3/build/d3.min.js"></script>
+    <script>
+    $(function()
+    {
+        "use strict";
+
+        // http://www.tiobe.com/tiobe-index/
+        d3.json('./datasets/progLang.json', function(progLang)
+        {
+            progLang = _.reject(progLang, { lang: 'PHP' });
+
+            var barHeight = 20;
+            var width = 800;
+            var height = barHeight * progLang.length;
+
+            var chart = d3.select('.chart');
+            var svg = chart.append('svg')
+                .attr('width', width)
+                .attr('height', height);
+
+            var ratings = function(d) { return d.ratings; };
+
+            var x = d3.scaleLinear()
+                .domain([0, d3.max(progLang, ratings)])
+                .range([0,width]);
+
+            // var y = d3.scaleLinear()
+            //     .domain([0, progLang.length])
+            //     .range([0, height]);
+
+            var y = d3.scaleBand()
+                .domain(d3.range(0, progLang.length))
+                .range([0, height])
+                .paddingInner(0.1);
+
+            var color = d3.scaleOrdinal(d3.schemeCategory20b)
+
+            var bars = svg.selectAll('rect.bar').data(progLang);
+            bars.enter().append('rect')
+                .attr('class', 'bar')
+                .attr('x', 0)
+                .attr('y', function(d,i) { return y(i); })
+                .attr('width', function(d) { return x(d.ratings); })
+                .attr('height', /*barHeight-1*/ y.bandwidth())
+                .style('fill', function(d) { return color(d.lang); })
+                // .classed('cool', function(d) { return d.ratings > 3; });
+
+            bars.enter().append('text')
+                .attr('y', function(d,i) { return y(i) + y.bandwidth(); })
+                .attr('x', function(d) { return x(d.ratings); })
+                .attr('dy', '-5px')
+                .attr('dx', function(d) { return d.ratings > 3? '-3px' : '3px';})
+                .attr('text-anchor', function(d) { return d.ratings > 3? 'end' : 'start';})
+                .text(function(d) { return d.lang; });
+        });
+    });
+    </script>
+</body>
+</html>

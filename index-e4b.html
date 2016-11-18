@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo #4</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <style>
+        .chart svg {
+            border: 1px solid black;
+            padding: 0px;
+        }
+        .bar {
+            stroke: white;
+        }
+
+        svg .color-base{fill:#739299}
+        svg .otros{fill:#93a2a9}
+        svg .sinasignar{fill:#ccc}
+        svg .pp{fill:#11a3de}
+        svg .psoe{fill:#d20a11}
+        svg .ciudadanos{fill:#ec6b27}
+        svg .podemos{fill:#6e2362}
+        svg .podemos-iu{fill:#6e2362}
+        svg .podemos-c{fill:#952f84}
+        svg .iu{fill:#009f62}
+        svg .pnv{fill:#006634}
+        svg .upyd{fill:#e7548e}
+        svg .ciu{fill:#2E3272}
+        svg .amaiur{fill:#118f9f}
+        svg .bildu{fill:#b3c900}
+        svg .ccanaria{fill:#eeda00}
+        svg .bng{fill:#8dd8f8}
+        svg .gbai{fill:#ae2f17}
+        svg .esquerra{fill:#b87513}
+        svg .compromis{fill:#ec4f07}
+        svg .fac{fill:#17375e}
+
+    </style>
+</head>
+<body>
+    <main class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1>Ejemplo #4</h1>
+                <p>Sectores, Pies, Arcs</p>
+            </div>
+            <section class="col-xs-12">
+                <h2>Hemiciclo</h2>
+                <button id="show2016">2016</button>
+                <button id="show2015">2015</button>
+                <button id="show2011">2011</button>
+                <div class="chart"></div>
+            </section>
+        </div>
+    </main>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/lodash/lodash.min.js"></script>
+    <script src="node_modules/d3/build/d3.js"></script>
+    <script>
+    $(function()
+    {
+        "use strict";
+
+        var pie, svg, arc;
+        var animationStartAngle = 0;
+
+        function key(d) { return d.data.sCandidaturaUnificada; } 
+
+        function initChart()
+        {
+            var container =
+            {
+                width:  640,
+                height: 460,
+            };
+
+            var margin = { top: 20, right: 10, bottom: 20, left: 10 };
+
+            var width  = container.width - margin.left - margin.right,
+                height = container.height - margin.top - margin.bottom;
+            var radius = width/2;
+
+            var fullPie = {
+                startAngle: -Math.PI * 10/16,
+                endAngle:    Math.PI * 10/16,
+            };
+
+            pie = d3.pie()
+                .startAngle(fullPie.startAngle)
+                .endAngle(fullPie.endAngle)
+                .padAngle(Math.PI/180.0 * 0.0)
+                .value( function(d) { return d.iEscanos; } )
+                .sort(null);
+
+            arc = d3.arc()
+                .innerRadius( radius * 0.25)
+                .outerRadius( radius * 1.00);
+
+            svg = d3.select(".chart").append('svg')
+                .attr("width",  container.width)
+                .attr("height", container.height)
+                .attr("viewBox", [0,0,container.width,container.height].join(' '))
+            .append("g")
+                .attr("transform", "translate(" + (margin.left + width/2) + "," + (margin.top + radius - 0.5) + ")");
+        }
+
+        function updateChart(congreso)
+        {
+            var duration = 2000;
+
+            var candidaturas = _.reject(congreso.candidaturas, { iEscanos: 0 });
+
+            var sectores = svg.datum(candidaturas).selectAll('path.sector').data(pie, key);
+
+            console.log(sectores.enter().size(), sectores.size(), sectores.exit().size());
+
+            sectores.enter().append("path")
+                .each(function(d) { console.log(d.data.sCandidatura + ": " + d.data.iEscanos );})
+                .attr('class', function(d) { return 'sector ' + d.data.sCandidaturaUnificada; })
+                .style('opacity',0)
+                .transition()
+                .duration(duration)
+                // .attr('d', arc);
+                .style('opacity',1)
+                .attrTween('d', function(d) {
+                    var is = d3.interpolate(animationStartAngle, d.startAngle);
+                    var ie = d3.interpolate(0, d.endAngle-d.startAngle);
+                    return function(t) {
+                        d.startAngle = is(t);
+                        d.endAngle = d.startAngle + ie(t);
+                        return arc(d);
+                    };
+                });
+
+            sectores
+                .style('opacity',0)
+                .transition()
+                .duration(duration)
+                // .attr('d', arc);
+                .style('opacity',1)
+                .attrTween('d', function(d) {
+                    var is = d3.interpolate(animationStartAngle, d.startAngle);
+                    var ie = d3.interpolate(0, d.endAngle-d.startAngle);
+                    return function(t) {
+                        d.startAngle = is(t);
+                        d.endAngle = d.startAngle + ie(t);
+                        return arc(d);
+                    };
+                });
+
+            sectores.exit()
+                .remove();
+        }
+
+
+        var congreso2016, congreso2015, congreso2011;
+
+        initChart();
+
+        d3.json('./datasets/congreso.json', function(congreso)
+        {
+            congreso2016 = congreso;            
+        });
+
+        d3.json('./datasets/congreso_2015.json', function(congreso)
+        {
+            congreso2015 = congreso;
+        });
+
+        d3.json('./datasets/congreso_2011.json', function(congreso)
+        {
+            congreso2011 = congreso;
+        });
+
+        $('#show2016').on('click', function() { updateChart(congreso2016); });
+        $('#show2015').on('click', function() { updateChart(congreso2015); });
+        $('#show2011').on('click', function() { updateChart(congreso2011); });
+
+    });
+    </script>
+</body>
+</html>

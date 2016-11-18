@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo #2</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <style>
+        .chart {
+            border: 1px solid black;
+            padding: 0px;
+        }
+        .bar { 
+            margin-bottom: 1px;  
+            padding: 1px 5px;
+            white-space: nowrap; 
+            background-color: #2ecc71;
+        }
+        .cool        { background-color: #e67e22; }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1>Ejemplo #2</h1>
+                <p>SVG, Escalas, Colores, Ejes</p>
+            </div>
+            <section class="col-xs-12">
+                <h2>Lenguajes de Programación</h2>
+                <div class="chart"></div>
+            </section>
+        </div>
+    </main>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/lodash/lodash.min.js"></script>
+    <script src="node_modules/d3/build/d3.min.js"></script>
+    <script>
+    $(function()
+    {
+        "use strict";
+
+        // http://www.tiobe.com/tiobe-index/
+        d3.json('./datasets/progLang.json', function(progLang)
+        {
+            progLang = _.reject(progLang, { lang: 'PHP' });
+
+            var chart = d3.select('.chart');
+            var bars = chart.selectAll('div.bar').data(progLang);
+
+            bars.enter().append('div')
+                .attr('class', 'bar')
+                .classed('cool', function(d) { return d.ratings > 3; })
+                .style('width', function(d) { return (5*d.ratings) + "%"; })
+                .text(function(d) { return d.lang; });
+        });
+    });
+    </script>
+</body>
+</html>

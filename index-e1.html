@@ -59,9 +59,18 @@
 
         var chart = d3.select('.first-data-driven-viz');
         var ul = chart.append('ul');
+        var items = ul.selectAll('li.lang').data(progLang);
 
-        // aqui falta algo
+        items.enter().append('li')
+            .attr('class', 'lang')
+            .classed('cool', function(d) { return d.ratings > 3; })
+            .classed('going-down', function(d)  { return d.oct16 < d.oct15; })
+            .classed('going-up', function(d) { return d.oct16 > d.oct15;})
+            .style('font-size', function(d) { return (((20-d.oct16) * 2) + 5) + 'px'; })
+            .text(function(d) { return d.lang; });
     });
     </script>
 </body>
 </html>
+
+

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo #5</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <style>
+        #chart svg {
+            border: 1px solid black;
+            padding: 0px;
+        }
+        .bar {
+            stroke: white;
+        }
+
+        .etiquetas text {
+            fill: white;
+        }
+
+        svg .color-base{fill:#739299}
+        svg .otros{fill:#93a2a9}
+        svg .sinasignar{fill:#ccc}
+        svg .pp{fill:#11a3de}
+        svg .psoe{fill:#d20a11}
+        svg .ciudadanos{fill:#ec6b27}
+        svg .podemos{fill:#6e2362}
+        svg .podemos-iu{fill:#6e2362}
+        svg .podemos-c{fill:#952f84}
+        svg .iu{fill:#009f62}
+        svg .pnv{fill:#006634}
+        svg .upyd{fill:#e7548e}
+        svg .ciu{fill:#2E3272}
+        svg .amaiur{fill:#118f9f}
+        svg .bildu{fill:#b3c900}
+        svg .ccanaria{fill:#eeda00}
+        svg .bng{fill:#8dd8f8}
+        svg .gbai{fill:#ae2f17}
+        svg .esquerra{fill:#b87513}
+        svg .compromis{fill:#ec4f07}
+        svg .fac{fill:#17375e}
+
+    </style>
+</head>
+<body>
+    <main class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1>Ejemplo #5</h1>
+                <p>Layouts</p>
+            </div>
+            <section class="col-xs-12">
+                <h2>Escaños</h2>
+                <div id="chart"></div>
+            </section>
+            <section class="col-xs-12">
+                <table class="tabla-resultados">
+                    
+                </table>
+                <button id="update">Actualizar</button>
+                <input type="number" class="animation-duration" value="250" step="250">
+            </section>
+        </div>
+    </main>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/lodash/lodash.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script> -->
+    <script src="node_modules/d3/build/d3.js"></script>
+    <script>
+    $(function()
+    {
+        "use strict";
+
+        var squaresLayout = function(squaresPerRow, width, gapRatio)
+        {
+            var squareSize = width / (squaresPerRow + (squaresPerRow-1) * gapRatio);
+            var gapSize = squareSize * gapRatio;
+
+            var layout = function(data)
+            {
+                return _.map(data, function(d, i)
+                {
+                    var row = Math.floor(i / squaresPerRow);
+                    var col = i - (row*squaresPerRow);        
+                    return {
+                        row: row,
+                        col: col,
+                        x: col * squareSize + col * gapSize,
+                        y: row * squareSize + row * gapSize,
+                        data: d,
+                    };
+                });
+            }
+            layout.squareSize = squareSize;
+            layout.gapSize = gapSize;
+            layout.squaresPerRow = squaresPerRow;
+
+            return layout;
+        };
+
+        function makeTable(resultados)
+        {
+            var tabla = d3.select('.tabla-resultados');
+            var filas = tabla.selectAll('tr').data(resultados);
+            var filasNuevas = filas.enter().append('tr');
+            filasNuevas.append('td')
+                .text(function(d) { return d.sCandidatura; });
+
+            filasNuevas.append('td')
+                .append('input')
+                    .attr('type', 'number')
+                    .attr('class', function(d) { return d.sCandidaturaUnificada; })
+                    .attr('value', function(d) { return d.iEscanos; });
+        }
+
+        var svg, layout;
+
+        function initChart(selector, resultados)
+        {
+            var container =
+            {
+                width:  640,
+                height: 460,
+            };
+
+            var margin = { top: 10, right: 10, bottom: 10, left: 10 };
+
+            var width  = container.width - margin.left - margin.right,
+                height = container.height - margin.top - margin.bottom;
+
+            svg = d3.select(selector).append("svg")
+                .attr("width", container.width)
+                .attr("height", container.height)
+                .attr("viewBox", [0,0,container.width,container.height].join(' '))
+            .append("g")
+                .attr("transform","translate(" + (margin.left) + "," + (margin.top) + ")");
+
+            svg.append("g").attr("class", "squares");
+
+            var escanosPorFila = 12;
+            var gapRatio = 0.15;
+            layout = squaresLayout(escanosPorFila, width, gapRatio);
+        }
+
+        function updateChart(resultados, animationDuration)
+        {
+            animationDuration = animationDuration===undefined? 5000 : animationDuration;
+
+            resultados = _.sortBy(resultados, function(r) { return -r.iEscanos; });
+            console.table(resultados);
+
+            var diputados = [];
+            _.each(resultados, function(r)
+            {
+                for(var i=0; i<r.iEscanos; i++)
+                {
+                    diputados.push({
+                        sCandidaturaUnificada: r.sCandidaturaUnificada,
+                        idDiputado: r.sCandidaturaUnificada + i,
+                    });
+                }
+            });
+            console.table(diputados);
+
+            var squares = svg.select('.squares').datum(diputados).selectAll('rect.square')
+                .data(layout, function(d) { return d.data.idDiputado; });
+
+            squares.enter().append('rect')
+                .attr('class', function(d) { return "square otros " + d.data.sCandidaturaUnificada; })
+                .attr('x', function(d) { return d.x + layout.squareSize / 2; })
+                .attr('y', function(d) { return d.y + layout.squareSize / 2; })
+                .attr('height', 0)
+                .attr('width', 0)
+
+            .merge(squares).transition()
+                .delay(function(d,i) { return i*animationDuration/diputados.length; })//d.data.iPartido*(animationDuration/2); })
+                .duration(animationDuration)
+                .attr('x', function(d) { return d.x; })
+                .attr('y', function(d) { return d.y; })
+                .attr('height', layout.squareSize)
+                .attr('width', layout.squareSize);
+
+            squares.exit().transition()
+                .delay(function(d,i) { return i*animationDuration/diputados.length; })//d.data.iPartido*(animationDuration/2); })
+                .attr('x', function(d) { return d.x + layout.squareSize / 2; })
+                .attr('y', function(d) { return d.y + layout.squareSize / 2; })
+                .attr('height', 0)
+                .attr('width', 0)
+                .remove();
+        }
+
+        var resultados = [
+        { sCandidaturaUnificada: 'pp',         sCandidatura: 'PP',              iEscanos: 23 },
+        { sCandidaturaUnificada: 'psoe',       sCandidatura: 'PSOE',            iEscanos: 20 },
+        { sCandidaturaUnificada: 'podemos',    sCandidatura: 'PODEMOS-IU-EQUO', iEscanos: 11 },
+        { sCandidaturaUnificada: 'ciudadanos', sCandidatura: 'CIUDADANOS',      iEscanos:  7 },
+        ];
+
+        makeTable(resultados);
+        initChart('#chart', resultados);
+        updateChart(resultados, $('input.animation-duration').val());
+
+        $('#update').on('click', function()
+        {
+            _.each(resultados, function(r)
+            {
+                r.iEscanos = $('input.' + r.sCandidaturaUnificada).val();
+            });
+            var animationDuration = $('input.animation-duration').val();
+            updateChart(resultados, animationDuration);
+        });
+
+    });
+    </script>
+</body>
+</html>

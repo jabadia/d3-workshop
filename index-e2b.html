@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo #2</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <style>
+        .chart svg {
+            border: 1px solid black;
+            padding: 0px;
+        }
+        .bar { 
+            fill: #2ecc71;
+        }
+        .cool 
+        { 
+            fill: #e67e22; 
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1>Ejemplo #2</h1>
+                <p>SVG, Escalas, Colores, Ejes</p>
+            </div>
+            <section class="col-xs-12">
+                <h2>Lenguajes de Programación</h2>
+                <div class="chart"></div>
+            </section>
+        </div>
+    </main>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/lodash/lodash.min.js"></script>
+    <script src="node_modules/d3/build/d3.min.js"></script>
+    <script>
+    $(function()
+    {
+        "use strict";
+
+        // http://www.tiobe.com/tiobe-index/
+        d3.json('./datasets/progLang.json', function(progLang)
+        {
+            progLang = _.reject(progLang, { lang: 'PHP' });
+
+            var barHeight = 20;
+
+            var chart = d3.select('.chart');
+            var svg = chart.append('svg')
+                .attr('width',800)
+                .attr('height', barHeight * progLang.length);
+
+            var bars = svg.selectAll('rect.bar').data(progLang);
+            bars.enter().append('rect')
+                .attr('class', 'bar')
+                .attr('x', 0)
+                .attr('y', function(d,i) { return i*barHeight; })
+                .attr('width', function(d) { return 50*d.ratings; })
+                .attr('height', barHeight-1)
+                .classed('cool', function(d) { return d.ratings > 3; });
+
+            bars.enter().append('text')
+                .attr('y', function(d,i) { return i*barHeight + barHeight; })
+                .attr('dy', '-5px')
+                .attr('dx', '3px')
+                .text(function(d) { return d.lang; });
+        });
+    });
+    </script>
+</body>
+</html>

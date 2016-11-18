@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo #3</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <style>
+        .chart svg {
+            border: 1px solid black;
+            padding: 0px;
+        }
+        .bar {
+            stroke: white;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1>Ejemplo #3</h1>
+                <p>Data joins, animación</p>
+            </div>
+            <section class="col-xs-12">
+                <h2>Evolución Temporal</h2>
+                <button id="step-forward">Avanza</button>
+                <div class="chart"></div>
+            </section>
+        </div>
+    </main>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/lodash/lodash.min.js"></script>
+    <script src="node_modules/d3/build/d3.js"></script>
+    <script>
+    $(function()
+    {
+        "use strict";
+
+        var psv = d3.dsvFormat('|','text/plain');
+
+        d3.text('./datasets/weather.psv', function(data)
+        {
+            var weather = psv.parse(data, function(r)
+            {
+                r.day = new Date(r.day);
+                r.temp_min = +r.temp_min;
+                r.temp_max = +r.temp_max;
+                r.humidity = +r.humidity;
+                r.moon_phase =  +r.moon_phase;
+                return r;
+            });
+
+            console.table(weather.slice(0,10));
+
+            var firstDay = 0;
+            var daysToShow = 30;
+            var container = {
+                width: 960,
+                height: 500,
+            };
+
+            var duration = 500;
+
+            function tempMax(d) { return d.temp_max; }
+            function tempMin(d) { return d.temp_min; }
+            function day(d)     { return d.day; }
+
+            var margin = {top: 20, right: 10, bottom: 20, left: 10};
+
+            var width = container.width - margin.left - margin.right,
+                height = container.height - margin.top - margin.bottom;
+            
+            var svg = d3.select(".chart").append("svg")
+                .attr("width", container.width)
+                .attr("height", container.height)
+            .append("g")
+                .attr("transform", "translate(" + margin.left + "," + (margin.top + height) + ") scale(1,-1)");
+
+            // scales
+            var x = d3.scaleBand()
+                .domain(d3.range(daysToShow))
+                .range([0, width])
+                .padding(0);
+
+            var y = d3.scaleLinear()
+                .domain([0, d3.max(weather, tempMax)])
+                .range([0, height]);
+
+            // var color = d3.scaleSequential(d3.interpolateRdBu)
+            var color = d3.scaleSequential(d3.interpolateWarm)
+                .domain([0, d3.max(weather, tempMax)]);
+
+
+            function updateChart(firstDay)
+            {
+                var visibleWeather = weather.slice(firstDay, firstDay + daysToShow);
+                var bars = svg.selectAll('rect.bar').data(visibleWeather, day);
+
+                console.log(bars.enter().size(), bars.size(), bars.exit().size());
+
+                bars.enter()
+                    .append('rect')
+                    .attr('class','bar')
+                    .attr('x', function(d,i) { return x(i) + x.bandwidth(); })
+                    .attr('width', x.bandwidth())
+                    .attr('y', function(d) { return y(tempMin(d)); })
+                    .attr('height', function(d) { return y(tempMax(d)-tempMin(d)); })
+                    .style('fill', function(d) { return color(tempMin(d));})
+                    .style('opacity', 0)
+                .transition()
+                    .duration(duration)
+                    .attr('x', function(d,i) { return x(i); })
+                    .style('opacity', 1)
+
+                bars
+                    .transition()
+                    .duration(duration)
+                    .attr('x', function(d,i) { return x(i); })
+                    .attr('width', x.bandwidth())
+                    .attr('y', function(d) { return y(tempMin(d)); })
+                    .attr('height', function(d) { return y(tempMax(d)-tempMin(d)); })
+                    .style('fill', function(d) { return color(tempMin(d));});
+
+                bars.exit()
+                    .transition()
+                    .duration(duration)                    
+                    .attr('x', function() { return x(0) - x.bandwidth(); })
+                    .style('opacity', 0)
+                    .remove()
+            }
+
+            $('#step-forward').on('click', function()
+            {
+                firstDay += 1;
+                updateChart(firstDay);
+            });
+
+            updateChart(0);
+
+            setInterval(function()
+            {
+                console.log(firstDay);
+                firstDay += 1;
+                updateChart(firstDay);
+            }, duration);
+        });
+
+    });
+    </script>
+</body>
+</html>
