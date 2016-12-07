@@ -63,21 +63,3 @@ En ese momento se debería abrir vuestro navegador y ver algo así:
 
 Si es así, enhorabuena, vete a la nevera y ábrete una cerveza o una fanta para celebrarlo.
 
-# proxy para npm
-la organización de codemotion nos pide que seamos buenos con el ancho de banda y que usemos el proxy de npm que han desplegado:
-
-recomendable poner esto en /etc/hosts
-
-```
-10.60.32.11 proxy1 
-10.60.32.12 proxy2
-```
-
-para instalar un paquete
-
-```
-$ npm --proxy http://proxy2:8080 --https-proxy http://proxy2:8080 --strict-ssl false install nombre-del-paquete
-```
-
-# info en vivo
-[info en vivo](https://docs.google.com/document/d/1eALde4XkotSuhhPrMhar9b69O6WNgymvP2jKER996UY/edit?usp=sharing)
